@@ -18,7 +18,6 @@ let progressHeader = document.querySelectorAll(
   ".skills ul li .txt h3:last-child"
 );
 let progressBox = document.querySelectorAll(".skills .box");
-console.log(progressBox);
 document.onscroll = function () {
   progressBox.forEach(function (ele, index) {
     let progressBars = document.querySelectorAll(
@@ -28,7 +27,6 @@ document.onscroll = function () {
       progressBars.forEach(function (ele) {
         let progressDegree = ele.getAttribute("data-progress");
         ele.style.width = progressDegree;
-        console.log("hello")
       });
     } else {
       progressBars.forEach(function (ele) {
