@@ -28,6 +28,7 @@ document.onscroll = function () {
       progressBars.forEach(function (ele) {
         let progressDegree = ele.getAttribute("data-progress");
         ele.style.width = progressDegree;
+        console.log("hello")
       });
     } else {
       progressBars.forEach(function (ele) {
